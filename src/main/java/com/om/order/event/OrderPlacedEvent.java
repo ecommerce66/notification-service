@@ -1,4 +1,4 @@
-package com.om.notificationservice.order;
+package com.om.order.event;
 
 
 public class OrderPlacedEvent {
@@ -6,6 +6,14 @@ public class OrderPlacedEvent {
   private String email;
 
   public OrderPlacedEvent() {
+  }
+
+  @Override
+  public String toString() {
+    return "OrderPlacedEvent{" +
+            "orderNumber='" + orderNumber + '\'' +
+            ", email='" + email + '\'' +
+            '}';
   }
 
   public OrderPlacedEvent(String orderNumber, String email) {
